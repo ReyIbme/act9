@@ -1,0 +1,76 @@
+#menuPrincipal {
+    background-color: rgba(243, 44, 200, 0.76);
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+}
+
+.opcionMenuPrincipal {
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(250, 253, 49);
+    padding: 10px 50px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.opcionMenuPrincipal:hover {
+    background-color: rgba(55, 235, 248, 0.541);
+}
+
+body {
+    background-color: rgb(25, 209, 233);
+    font-style: italic;
+    font-size: large;
+}
+
+section {
+    background: url(../img/fondo.jpg) no-repeat center fixed scroll;
+    padding: px 0;
+}
+
+label input[type="text"] {
+    height: 28px;
+    width: 120px;
+    border: solid 1px rgb(174, 235, 34);
+    text-align: center;
+    color: #02b102;
+    border-radius: 10px;
+    display: block;
+}
+
+li input[type="text"] {
+    height: 28px;
+    width: 40px;
+    border: solid 1px rgb(224, 30, 30);
+    text-align: center;
+    color: #0cb80c;
+    border-radius: 10px;
+}
+
+.columna {
+    background-color: #fffc59;
+    width: 100px;
+    margin: 0;
+}
+
+ul {
+    text-align: left;
+}
+
+div {
+    display: inline-flex;
+    text-align: right;
+    text-align: left;
+}
+
+.bounce-enter-active {
+    animation: bounce-in .5s;
+}
+
+.bounce-leave-active {
+    animation: bounce-in .5s reverse;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link href="../img/logo.png" rel="icon" sizes="50x50">
+    <title>SOTUS</title>
+</head>
+
+<body>
+    <nav id="menuPrincipal">
+        <h1>
+            <a class="opcionMenuPrincipal" href="index.html">¡ SOTUS !</a>
+        </h1>
+    </nav>
+    <header id="titulo" class=" text-center text-white">
+        <span class="h2"><br></span>
+    </header>
+    <section class="container text-center" id="cont">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <main>
+                    <ul>
+                        <h1>Bienvenido a nuestro menú</h1>
+                        <div>
+                            <h2>
+                                <br>
+                                <p>Opciones: Cafe , Malteadas, Té y Jugos</p>
+
+                            </h2>
+                        </div>
+                        <hr size="8px" color="black" />
+                        <li v-for="juego in mejoresJuegos">
+                            Bebida:{{juego.titulo}} Ingredientes:{{ juego.genero }}. Precio:{{juego.precio}}. Tamaño:{{juego.tamaño}}.
+                            <!---Imprimir el arreglo de datos-->
+                        </li>
+                    </ul>
+                    <input type="range" min="10" max="25" v-model="minimo">
+                    <input type="search" v-model="busqueda" placeholder="Ingresa una Bebida ">
+                    <ul class="list unstyled text center">
+                        <li v-for="juego in buscarJuego">
+                            Bebida:{{juego.titulo}} Ingredientes:{{juego.genero}}. Precio:{{juego.precio}}. Tamaño:{{juego.tamaño}}.
+
+                        </li>
+                    </ul>
+                    <pre></pre>
+                </main>
+    </section>
+    <footer class=" text-center text-white">
+        <span class="h2">By Rey IBME</span>
+    </footer>
+
+    <script src="../js/VUE.js"></script>
+    <script src="../js/funciones.js"></script>
+</body>
+
+</html>
